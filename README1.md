@@ -1,6 +1,6 @@
 # Postgres_HW
  
-
+```sql
 edu=# \d test_a
                           Таблица "public.test_a"
  Столбец  |   Тип   | Правило сортировки | Допустимость NULL | По умолчанию 
@@ -65,3 +65,4 @@ edu=# Select a.column_a,b.column_b, a.descrip, b.descrip  from test_a a left joi
         4 |          | e       | 
         5 |        5 | g       | n
 (9 строк)
+```

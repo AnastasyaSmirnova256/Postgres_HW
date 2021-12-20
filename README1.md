@@ -65,4 +65,19 @@ edu=# Select a.column_a,b.column_b, a.descrip, b.descrip  from test_a a left joi
         4 |          | e       | 
         5 |        5 | g       | n
 (9 строк)
+
+edu=# Select * from test_a full outer join test_b on test_a.column_a = test_b.column_b;
+ column_a | descrip | column_b | descrip 
+----------+---------+----------+---------
+        1 | a       |        1 | q
+        1 | a       |        1 | p
+        2 | b       |        2 | k
+        2 | b       |        2 | i
+        3 | c       |        3 | m
+        1 | d       |        1 | q
+        1 | d       |        1 | p
+        4 | e       |          | 
+        5 | g       |        5 | n
+          |         |        6 | o
+(10 строк)
 ```

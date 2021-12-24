@@ -2144,7 +2144,7 @@ ais=# select * from personnel;
 ```sql
 demo=# create table books (book_id integer primary key, book_description text);
 CREATE TABLE
-demo=# \copy books from '/home/nz/Downloads/books2.txt';
+demo=# \copy books from '/home/postgres/df/books2.txt';
 COPY 1000
 demo=# alter table books add column ts_description tsvector;
 ALTER TABLE
